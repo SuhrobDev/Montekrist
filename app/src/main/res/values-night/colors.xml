@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="card_color">#32323D</color>
+    <color name="bottom_nav_selected">#0D90EF</color>
+    <color name="bottom_nav_unselected">#666687</color>
+    <color name="fragment_background">#1D1E24</color>
+
+    <color name="black1">#FFFFFF</color>
+    <color name="bell">#DCDCE4</color>
+    <color name="grey2">#DCDCE4</color>
+    <color name="blue">#0D90EF</color>
+    <color name="gray_1">#FFFFFF</color>
+    <color name="toolbar_color">#212121</color>
+    <color name="main_text_color">#f2f2f2</color>
+
+</resources>

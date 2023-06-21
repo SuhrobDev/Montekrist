@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    tools:context=".presentation.ui.favorite.FavoriteFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/toolbar_color"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fragmentName"
+            style="@style/toolbar_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:text="Favorite"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        <com.google.android.material.card.MaterialCardView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="16dp"-->
+        <!--            app:cardBackgroundColor="@android:color/transparent"-->
+        <!--            app:cardCornerRadius="10dp"-->
+        <!--            app:cardElevation="0dp"-->
+
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:id="@+id/linearLayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="#1F767680"-->
+        <!--                android:gravity="center|center_vertical"-->
+        <!--                android:paddingHorizontal="8dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/imgSearch"-->
+        <!--                    android:layout_width="24dp"-->
+        <!--                    android:layout_height="24dp"-->
+        <!--                    android:layout_marginVertical="12dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:padding="4dp"-->
+        <!--                    android:src="@drawable/search"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:tint="@color/gray_1" />-->
+
+        <!--                <EditText-->
+        <!--                    android:id="@+id/search"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:layout_marginStart="16dp"-->
+        <!--                    android:layout_marginEnd="8dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:background="@android:color/transparent"-->
+        <!--                    android:fontFamily="@font/roboto_400"-->
+        <!--                    android:hint="@string/search"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintEnd_toStartOf="@id/close"-->
+        <!--                    app:layout_constraintStart_toEndOf="@id/imgSearch"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                    android:id="@+id/close"-->
+        <!--                    android:layout_width="24dp"-->
+        <!--                    android:layout_height="24dp"-->
+        <!--                    android:layout_marginVertical="8dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:padding="4dp"-->
+        <!--                    android:src="@drawable/close_text"-->
+        <!--                    android:visibility="gone"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        </com.google.android.material.card.MaterialCardView>-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/savedRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:listitem="@layout/item_starship" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
